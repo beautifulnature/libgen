@@ -37,7 +37,7 @@ const getQuotes = async () => {
   // 41995
   let quotes;
 
-  for (let pageNo = 1; pageNo <= 7; pageNo++) {
+  for (let pageNo = 1; pageNo <= 10; pageNo++) {
     await page.goto(`https://libgen.rs/search.php?mode=last&view=simple&phrase=1&res=100&timefirst=&timelast=&sort=def&sortmode=ASC&page=${pageNo}`, {
       waitUntil: "domcontentloaded",
     });
